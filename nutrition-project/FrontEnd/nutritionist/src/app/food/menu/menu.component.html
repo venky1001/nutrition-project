@@ -1,0 +1,16 @@
+<app-search></app-search>
+<div class="alert alert-success" *ngIf="favoriteAlreadyExist">Favorite Already Exist</div>
+<div class="alert alert-success" *ngIf="addedToFavorite">Successfully Added To Favorite</div>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let food of foods">
+        <div class="row">
+            <span (click)="viewDetails(food.name)" class="col-12 col-md-6 text-bold font-size-20 vertical-align-middle cursor-pointer">{{food?.name}}
+            <i class="material-icons vertical-align-middle">
+                    info
+                </i>
+            </span>
+            <span class="col-12 col-md-4">{{food?.group}}</span>
+            <button class="btn btn-primary float-right" (click)="onAddToFavoriteClicked(food)">Add To Favorite</button>
+        </div>
+    </li>
+</ul>

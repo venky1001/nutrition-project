@@ -1,0 +1,13 @@
+<h3 class="mt-4">Favorite List</h3>
+<ul class="list-group mt-3">
+    <li class="list-group-item" *ngFor="let food of foodList">
+        <div class="row">
+            <span (click)="viewDetails(food.name)" class="col-12 col-md-6 text-bold font-size-20 vertical-align-middle cursor-pointer">{{food?.name}}
+            <i class="material-icons vertical-align-middle">
+                    info
+                </i>
+            </span>
+            <span class="col-12 col-md-4">{{food?.group}}</span>
+        </div>
+    </li>
+</ul>
