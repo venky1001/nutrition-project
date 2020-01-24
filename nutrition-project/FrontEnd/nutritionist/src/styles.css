@@ -8,6 +8,9 @@
 .vertical-align-middle{
     vertical-align: middle;
 }
+.bank-bg{
+    background-color:-webkit-linear-gradient(left, #3931af, #00c6ff);
+}
 .cursor-pointer{
     cursor: pointer;
 }
